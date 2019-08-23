@@ -1,21 +1,27 @@
 package com.example.springbootmybatis.model;
 
 import java.io.Serializable;
-import java.util.Objects;
+import java.util.Date;
 
-public class User  implements Serializable {
+
+public class User implements Serializable {
 
     private Long id;
 
-    private String userName;
+    private String createdAt;
 
-    private String passWord;
+    private String updatedAt;
 
-    public User(Long id, String userName, String passWord) {
-        this.id = id;
-        this.userName = userName;
-        this.passWord = passWord;
-    }
+    private String name;
+
+    private String password;
+
+    private String gender;
+
+    private Integer isActive;
+
+    private String rememberToken;
+
 
     public Long getId() {
         return id;
@@ -25,34 +31,59 @@ public class User  implements Serializable {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getCreatedAt() {
+        return createdAt;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
     }
 
-    public String getPassWord() {
-        return passWord;
+    public String getUpdatedAt() {
+        return updatedAt;
     }
 
-    public void setPassWord(String passWord) {
-        this.passWord = passWord;
+    public void setUpdatedAt(String updatedAt) {
+        this.updatedAt = updatedAt;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        User user = (User) o;
-        return Objects.equals(id, user.id) &&
-                Objects.equals(userName, user.userName) &&
-                Objects.equals(passWord, user.passWord);
+    public String getName() {
+        return name;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, userName, passWord);
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public Integer getIsActive() {
+        return isActive;
+    }
+
+    public void setIsActive(Integer isActive) {
+        this.isActive = isActive;
+    }
+
+    public String getRememberToken() {
+        return rememberToken;
+    }
+
+    public void setRememberToken(String rememberToken) {
+        this.rememberToken = rememberToken;
     }
 }
