@@ -76,14 +76,20 @@ public class CatConfig {
 > 只适用 ***.properties 文件
 
 
-```bash
+```java
 
 @Component
 @PropertySource("classpath:my.properties")
 @ConfigurationProperties(prefix = "my")
 public class MyConfig {
 
+//    @Value("${my.name}")
+    private String name;
+//    @Value("${my.age}")
+    private Integer age;
+
 ```
+
 
 
 

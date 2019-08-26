@@ -9,3 +9,6 @@ cat:
     name: a
     age: 1
 
+
+server:
+  port: 8080

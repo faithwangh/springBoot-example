@@ -10,6 +10,7 @@ import java.util.Map;
 @Component
 @ConfigurationProperties(prefix = "cat" )
 public class CatConfig {
+
     private String name;
     private Integer age;
     private Date birth;
