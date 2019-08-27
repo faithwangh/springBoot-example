@@ -2,15 +2,19 @@ package com.example.springbootconfig.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
+import org.springframework.validation.annotation.Validated;
 
+import javax.validation.constraints.Email;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
 @Component
 @ConfigurationProperties(prefix = "cat" )
+//@Validated
 public class CatConfig {
 
+//    @Email
     private String name;
     private Integer age;
     private Date birth;

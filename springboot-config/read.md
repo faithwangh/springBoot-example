@@ -58,9 +58,12 @@ cat.child.age=33
 
 把配置属性映射到 bean 对象
 ```java
+
 @Component
 @ConfigurationProperties(prefix = "cat" )
+//@Validated
 public class CatConfig {
+//    @Email
     private String name;
     private Integer age;
     private Date birth;
