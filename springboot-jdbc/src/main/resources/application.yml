@@ -2,6 +2,10 @@ spring:
   datasource:
     username: root
     password: 123456
-    url: jdbc:mysql://172.0.0.1/default
-    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/default
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    type: com.alibaba.druid.pool.DruidDataSource
+
+
+#com.mysql.cj.jdbc.Driver  com.mysql.jdbc.Driver
 
